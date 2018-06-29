@@ -34,7 +34,24 @@
     text-align: center;
 }
 
+/* NAVBAR */
 
+.navbar {
+    background-color: #363636;
+}
+
+ul.navbar-nav {
+    margin: 0 auto;
+}
+
+ul li a {
+    color: white;
+    margin-right: 20px;
+}
+
+ul li a:hover {
+    color:#B3B3B3;
+}
 
 .fa-cart-plus {
     font-size: 30px;
@@ -42,4 +59,16 @@
     margin-right: 30px;
     float: right;
     cursor: pointer;
+}
+
+
+
+/* **************************************  */
+
+/* MEDIA QUERIES */
+
+@media(max-width:767px){ 
+   #account {
+        color: lightblue;
+    }
 }
