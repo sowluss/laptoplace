@@ -19,7 +19,7 @@
 
 /* Account */
 #account {
-    margin-left: 40px;
+    margin-left: 50px;
     margin-top: 30px;
     font-size: 30px;
 }
@@ -39,12 +39,11 @@
 
 /* Cart */
 
-.fa-cart-plus {
+#cart {
     font-size: 30px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-right: 70px;
     cursor: pointer;
-    float: right;
 }
 
 #cart a {
@@ -76,6 +75,16 @@ ul li a:hover {
     color: #B3B3B3;
 }
 
+/* Main Image */
+
+.main-image {
+    width: 100%;
+    margin-right: 40rem;
+}
+
+#image {
+    text-align: center;
+}
 
 
 /* **************************************  */
