@@ -7,15 +7,20 @@
 }
 
 .brand-bar {
-    height: 80px;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
     width: 100%;
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
 }
 
+#logo {
+    margin-left: 19rem;
+    text-align: center;
+}
+
+/* Account */
 #account {
     margin-left: 40px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 30px;
 }
 
@@ -32,9 +37,25 @@
     display: none;
 }
 
-#logo {
-    text-align: center;
+/* Cart */
+
+.fa-cart-plus {
+    font-size: 30px;
+    margin-top: 25px;
+    margin-right: 70px;
+    cursor: pointer;
+    float: right;
 }
+
+#cart a {
+    text-decoration: none;
+    color: black;
+}
+
+#cart a:hover {
+    color: grey;
+}
+
 
 /* NAVBAR */
 
@@ -55,22 +76,7 @@ ul li a:hover {
     color: #B3B3B3;
 }
 
-.fa-cart-plus {
-    font-size: 30px;
-    margin-top: 25px;
-    margin-right: 50px;
-    cursor: pointer;
-    float: right;
-}
 
-#cart a {
-    text-decoration: none;
-    color: black;
-}
-
-#cart a:hover {
-    color: grey;
-}
 
 /* **************************************  */
 
@@ -78,12 +84,13 @@ ul li a:hover {
 
 /* Mobile */
 
-@media(max-width: 767px) {
+/* @media(max-width: 667px) {
     #account {
-        display: none; 
+        display: none;
     }
     .brand-bar {
         display: block;
+        grid-template-columns: 20%;
         width: 100%;
     }
     .navbar {
@@ -91,19 +98,17 @@ ul li a:hover {
     }
     #shopping-section {
         display: grid;
-        grid-template-columns: 50% 50%; 
+        grid-template-columns: 50% 50%;
         width: 100%;
     }
-
     #account-mobile {
         display: block;
         font-size: 30px;
         margin-top: 27px;
-        margin-left: 60px; 
+        margin-left: 60px;
         cursor: pointer;
         text-align: center;
     }
-   
     #account-mobile a {
         text-decoration: none;
         color: black;
@@ -111,54 +116,49 @@ ul li a:hover {
     #account-mobile a:hover {
         color: grey;
     }
-
     #cart {
         font-size: 30px;
-        margin-top: 10px; 
+        margin-top: 10px;
         margin-right: 60px;
         cursor: pointer;
         text-align: center;
-        
     }
-
     #cart a {
         text-decoration: none;
         color: black;
     }
-
     #cart a:hover {
         color: grey;
     }
-
 }
 
 /*  TABLET  */
-@media(max-width: 1000px) {
+
+/* @media(max-width: 1000px) {
     #account {
-        display: none; 
+        display: none;
     }
     .brand-bar {
         display: block;
         width: 100%;
+        padding-top: 20px;
     }
     .navbar {
         margin-top: 130px;
     }
     #shopping-section {
         display: grid;
-        grid-template-columns: 50% 50%; 
+        grid-template-columns: 50% 50%;
         width: 100%;
     }
-
     #account-mobile {
         display: block;
         font-size: 30px;
         margin-top: 27px;
-        margin-left: 60px; 
+        margin-left: 100px;
         cursor: pointer;
         text-align: center;
     }
-   
     #account-mobile a {
         text-decoration: none;
         color: black;
@@ -166,22 +166,18 @@ ul li a:hover {
     #account-mobile a:hover {
         color: grey;
     }
-
     #cart {
         font-size: 30px;
-        margin-top: 10px; 
-        margin-right: 60px;
+        margin-top: 10px;
+        margin-right: 170px;
         cursor: pointer;
         text-align: center;
-        
     }
-
     #cart a {
         text-decoration: none;
         color: black;
     }
-
     #cart a:hover {
         color: grey;
     }
-}
+}  */
