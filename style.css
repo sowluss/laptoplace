@@ -75,7 +75,7 @@ ul li a:hover {
     color: #B3B3B3;
 }
 
-/* Sales items */
+/*  SALES CARDS  */
 
 .row {
     margin-top: 5rem;
@@ -84,6 +84,28 @@ ul li a:hover {
 .stock-photo {
     width: 100%;
 }
+
+.item-name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.price {
+    float: left;
+    margin-top: 7px;
+}
+
+.btn {
+    float: right;
+}
+
+
+
+
 
 
 
