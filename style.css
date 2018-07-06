@@ -88,6 +88,7 @@ ul li a:hover {
 .item-name {
     text-align: center;
     font-weight: bold;
+    margin-top: 25px;
 }
 
 .card-text {
@@ -103,8 +104,35 @@ ul li a:hover {
     float: right;
 }
 
+.rows {
+    margin-top: 25px;
+}
 
+/* FOOTER */
 
+#menu {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-top: 10px;
+}
+
+.social {
+    margin: 30px auto;
+}
+
+.fab {
+    margin-right: 15px;
+}
+
+#about {
+    margin-top: 30px;
+}
+
+#about-text {
+    text-align: justify;
+}
 
 
 
