@@ -118,6 +118,10 @@ ul li a:hover {
     margin-top: 10px;
 }
 
+.form-control {
+    width: 250px;
+}
+
 .social {
     margin: 30px auto;
 }
@@ -134,7 +138,44 @@ ul li a:hover {
     text-align: justify;
 }
 
+/* Copyright footer */
 
+hr { 
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+#footer-copy {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ABOUT US PAGE */
+
+section#menu a {
+    text-decoration: none;
+    color: black;
+}
+
+section#menu a:hover {
+    color: grey;
+}
+
+
+.page-title {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#about-us-image {
+    width: 100%;
+    margin-top: 40px;
+}
 
 
 /* **************************************  */
