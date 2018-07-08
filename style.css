@@ -119,7 +119,7 @@ ul li a:hover {
 }
 
 .form-control {
-    width: 250px;
+    width: 350px;
 }
 
 .social {
@@ -138,21 +138,23 @@ ul li a:hover {
     text-align: justify;
 }
 
+
 /* Copyright footer */
 
 hr { 
     display: block;
-    margin-top: 1rem;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 3rem auto 0.5em auto;
     border-style: inset;
     border-width: 1px;
 } 
 
 #footer-copy {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.btn-dark {
+    margin: 0 5rem;
 }
 
 /* ABOUT US PAGE */
@@ -184,6 +186,30 @@ section#menu a:hover {
 #about-content {
     margin-top: 40px;
 }
+
+
+/* CONTACT US page */
+
+.form-area {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact-field {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.btn-dark {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+
 
 
 /* **************************************  */
