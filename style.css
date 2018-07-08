@@ -177,6 +177,14 @@ section#menu a:hover {
     margin-top: 40px;
 }
 
+.about-text {
+    text-align: justify;
+}
+
+#about-content {
+    margin-top: 40px;
+}
+
 
 /* **************************************  */
 
