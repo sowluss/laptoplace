@@ -210,6 +210,10 @@ section#menu a:hover {
         margin: 0 auto;
     }
 
+    .active {
+        color: white;
+    }
+
     /* FAQ page */
 
     .faq-text {
@@ -224,6 +228,23 @@ section#menu a:hover {
     .faq-title {
         font-weight: bold;
     }
+
+
+/* ACCOUNT PAGE */
+
+.create-btn {
+    width: 50%;
+}
+
+.account-titles {
+    margin-bottom: 30px; 
+    margin-left: 30px;
+    font-weight: 300;
+}
+
+
+
+
 
 
 
