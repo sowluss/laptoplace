@@ -29,9 +29,25 @@
       </a>
     </div>
     <div id="cart">
-      <a href="">
+     <ul>
+        <li class="submenu">
         <i class="fas fa-cart-plus"></i>
-      </a>
+        <div id="shopping-cart">
+            <table id="cart-content" class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button type="button" class="btn btn-outline-dark" id="clear-cart">Clear Cart</button>
+    </div>
+      </li>
+      </ul>
     </div>
   </div>
 
@@ -53,12 +69,10 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-md-0">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Shop
-            <span class="sr-only">(current)</span>
-          </a>
+          <a class="nav-link active" href="index.html">Shop</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#!">Reviews</a>
+          <a class="nav-link" href="about.html">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -100,6 +114,7 @@
 
   <!-- FIRST ROW -->
 
+  <div id="stock-list">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -112,7 +127,7 @@
             <p class="card-text">14" FHD Metal Laptop (Silver) - (Intel Dual Core Celeron N3350 (Burst 2.4GHz) Processor, 2 GB RAM, 32 GB eMMC
               Storage, Windows 10).</p>
             <p class="price">&euro;180</p>
-            <button type="button" class="btn btn-outline-secondary">Add to cart</button>
+            <button type="button" class="btn btn-outline-secondary add-to-cart" data-id='1'>Add to cart</button>
           </div>
         </div>
       </div>
@@ -127,7 +142,7 @@
             <p class="card-text">15.5-Inch Full HD IPS Gaming Laptop (Black) - (Intel Core i7-7700HQ, 16GB RAM, 128GB SSD + 1TB HDD, NVIDIA Geforce
               GTX 1050Ti 4GB, Windows 10).</p>
             <p class="price">&euro;1090</p>
-            <button type="button" class="btn btn-outline-secondary">Add to cart</button>
+            <button type="button" class="btn btn-outline-secondary add-to-cart" data-id='2'>Add to cart</button>
           </div>
         </div>
       </div>
@@ -142,7 +157,7 @@
             <p class="card-text">15.6-Inch Laptop - (Black) (Intel Pentium N4200, 4 GB RAM, 1 TB HDD, Windows 10). Ultra Slim 200nits//HD 1366x768
               16: 9//Anti-Glare//NTSC: 45%.</p>
             <p class="price">&euro;499</p>
-            <button type="button" class="btn btn-outline-secondary">Add to cart</button>
+            <button type="button" class="btn btn-outline-secondary add-to-cart" data-id='3'>Add to cart</button>
           </div>
         </div>
       </div>
@@ -162,7 +177,7 @@
           <div class="card-body">
             <p class="card-text">Ultrabook 13.3-Inch Notebook - (Pure Silver) (Intel Pentium N4200, 4 GB RAM, 128 GB SSD, Windows 10 Home).</p>
             <p class="price">&euro;330</p>
-            <button type="button" class="btn btn-outline-secondary">Add to cart</button>
+            <button type="button" class="btn btn-outline-secondary add-to-cart" data-id='4'>Add to cart</button>
           </div>
         </div>
       </div>
@@ -176,7 +191,7 @@
           <div class="card-body">
             <p class="card-text">15.6-Inch Nano Edge Screen VivoBook (Gold) - (Intel Core i7-7500U, 8GB RAM, 256GB SSD, Windows 10).</p>
             <p class="price">&euro;725</p>
-            <button type="button" class="btn btn-outline-secondary">Add to cart</button>
+            <button type="button" class="btn btn-outline-secondary add-to-cart" data-id='5'>Add to cart</button>
           </div>
         </div>
       </div>
@@ -190,7 +205,7 @@
           <div class="card-body">
             <p class="card-text">15.6-inch Laptop (Natural Silver) - (Intel i5-8250U, 8 GB RAM, 1 TB HDD, Intel UHD Graphics 620, Windows 10 Home).</p>
             <p class="price">&euro;550</p>
-            <button type="button" class="btn btn-outline-secondary">Add to cart</button>
+            <button type="button" class="btn btn-outline-secondary add-to-cart" data-id='6'>Add to cart</button>
           </div>
         </div>
       </div>
@@ -211,7 +226,7 @@
             <p class="card-text">Microsoft DAG-00063 13.5-inch Touchscreen Surface Laptop (Intel Core i5-7200U, 8GB RAM, 256GB SSD, Intel HD 620
               Graphics, Windows 10 S).</p>
             <p class="price">&euro;1,099</p>
-            <button type="button" class="btn btn-outline-secondary">Add to cart</button>
+            <button type="button" class="btn btn-outline-secondary add-to-cart" data-id='7'>Add to cart</button>
           </div>
         </div>
       </div>
@@ -226,7 +241,7 @@
             <p class="card-text">15.6-inch Laptop Intel Core i5-8250U 1.6GHz / 3.4GHz Turbo Quad Core Processor, 8GB RAM, 256GB SSD, (1920 x 1080
               Resolution), Windows 10.</p>
             <p class="price">&euro;540</p>
-            <button type="button" class="btn btn-outline-secondary">Add to cart</button>
+            <button type="button" class="btn btn-outline-secondary add-to-cart" data-id='8'>Add to cart</button>
           </div>
         </div>
       </div>
@@ -241,12 +256,13 @@
             <p class="card-text">13.3-inch Full HD Premium Laptop (Silver) - (Intel Core i5-8250U Processor, 8 GB RAM, 256 GB SSD, Windows 10
               Home).</p>
             <p class="price">&euro;680</p>
-            <button type="button" class="btn btn-outline-secondary">Add to cart</button>
+            <button type="button" class="btn btn-outline-secondary add-to-cart" data-id='9'>Add to cart</button>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
   <!-- FOOTER AREA -->
 

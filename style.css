@@ -18,6 +18,7 @@
 }
 
 /* Account */
+
 #account {
     margin-left: 50px;
     margin-top: 30px;
@@ -43,17 +44,60 @@
     font-size: 30px;
     margin-top: 20px;
     margin-right: 70px;
-    cursor: pointer;
 }
 
-#cart a {
+.submenu {
+    position: relative;
+}
+
+.submenu #shopping-cart {
+    display: none;
+}
+
+.submenu:hover #shopping-cart {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+/* CART TABLE */
+th,
+td {
+    padding: 12px 25px;
+    text-align: left;
+    font-size: 15px;
+    
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+#clear-cart {
+    width: 100%;
+}
+
+/* #cart a {
     text-decoration: none;
     color: black;
-}
+} */
 
-#cart a:hover {
+/* #cart a:hover {
     color: grey;
-}
+} */
+
 
 
 /* NAVBAR */
@@ -138,15 +182,14 @@ ul li a:hover {
     text-align: justify;
 }
 
-
 /* Copyright footer */
 
-hr { 
+hr {
     display: block;
     margin-top: 3rem auto 0.5em auto;
     border-style: inset;
     border-width: 1px;
-} 
+}
 
 #footer-copy {
     text-align: center;
@@ -168,7 +211,6 @@ section#menu a:hover {
     color: grey;
 }
 
-
 .page-title {
     margin-top: 40px;
     text-align: center;
@@ -187,7 +229,6 @@ section#menu a:hover {
     margin-top: 40px;
 }
 
-
 /* CONTACT US page */
 
 .form-container {
@@ -199,54 +240,51 @@ section#menu a:hover {
     padding: 10px 40px 60px;
     width: 70%;
     margin: 0 auto;
-    }
-    
-    .form-control {
-        width: 100%;
-    }
+}
 
-    .contact-btn {
-        width: 100%;
-        margin: 0 auto;
-    }
+.form-control {
+    width: 100%;
+}
 
-    .active {
-        color: white;
-    }
+.contact-btn {
+    width: 100%;
+    margin: 0 auto;
+}
 
-    /* FAQ page */
+.active {
+    color: white;
+}
 
-    .faq-text {
-        text-align: justify;
-        padding-bottom: 20px;
-    }
-    
-    #faq-content {
-        margin-top: 40px;
-    }
+/* FAQ page */
 
-    .faq-title {
-        font-weight: bold;
-    }
+.faq-text {
+    text-align: justify;
+    padding-bottom: 20px;
+}
 
+#faq-content {
+    margin-top: 40px;
+}
+
+.faq-title {
+    font-weight: bold;
+}
 
 /* ACCOUNT PAGE */
 
 .create-btn {
-    width: 50%;
+    width: 100%;
 }
 
 .account-titles {
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     margin-left: 30px;
     font-weight: 300;
 }
 
-
-
-
-
-
+#sign-in {
+    margin-top: 20px;
+}
 
 /* **************************************  */
 
