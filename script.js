@@ -4,19 +4,19 @@ const items = document.querySelector('#stock-list'),
 
 
 
-
-
-
 // Event Listeners
 
 loadEventListeners();
 
-function loadEventListeners() {
+function loadEventListeners()   {
     // when a new stock item is added
     items.addEventListener('click', buyItem);
+
+    // when the remove button is clicked
+    shoppingCartContent.addEventListener('click', removeItem);
 }
 
-
+ 
 // Functions
 
 function buyItem(e) {
@@ -65,9 +65,15 @@ if(e.target.classList.contains('add-to-cart')) {
 
             // Add into the shopping cart
             shoppingCartContent.appendChild(row);
+      }
 
-        }
+//  remove item from the DOM
 
+function removeItem(e) {
+    if(e.target.classList.contains('remove')) {
+        e.target.parentElement.parentElement.remove();
+    }
+}
 
 }
 }
