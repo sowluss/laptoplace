@@ -29,6 +29,9 @@ if(e.target.classList.contains('add-to-cart')) {
 
         // read the values
         getLaptopInfo(item);
+
+    }
+}
     
         //  reads HTML information of the selected item
 
@@ -67,13 +70,12 @@ if(e.target.classList.contains('add-to-cart')) {
             shoppingCartContent.appendChild(row);
       }
 
-//  remove item from the DOM
 
+
+
+//  remove item from the DOM
 function removeItem(e) {
     if(e.target.classList.contains('remove')) {
         e.target.parentElement.parentElement.remove();
     }
-}
-
-}
 }
