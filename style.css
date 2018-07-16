@@ -17,6 +17,7 @@
     text-align: center;
 }
 
+
 /* Account */
 
 #account {
@@ -97,16 +98,6 @@ td:last-child {
     color: white;
     font-weight: bold;
 }
-
-/* #cart a {
-    text-decoration: none;
-    color: black;
-} */
-
-/* #cart a:hover {
-    color: grey;
-} */
-
 
 
 /* NAVBAR */
@@ -300,6 +291,48 @@ section#menu a:hover {
 /* MEDIA QUERIES */
 
 /* Mobile */
+
+@media(max-width: 667px) {
+    .brand-bar {
+        width: 100%;
+        display: inline-block;
+    }
+
+    #logo {
+        margin: 20px auto 0 auto;
+        text-align: center;
+    }
+   
+    #account {
+        width: 50%;
+        margin-left: 150px;
+        margin-top: 25px;
+        font-size: 10px;
+    }
+    #cart {
+        width: 50%;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 170px;
+    }
+    .navbar {
+        background-color: #363636;
+        width: auto;
+        margin-top: 10px;
+    }
+    .col-md-4 {
+        margin-bottom: 15px;
+    }
+
+    /*  Footer  */
+
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+
+
+}
 
 /* @media(max-width: 667px) {
     #account {
