@@ -290,6 +290,64 @@ section#menu a:hover {
 
 /* MEDIA QUERIES */
 
+/* Tablet Landscape */
+
+@media(max-width: 1024px) {
+    .brand-bar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 20% 20%;
+      
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+   
+    #account {
+      
+        margin-left: 150px;
+        margin-top: 30px;
+        font-size: 10px;
+    }
+    #cart {
+    
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 170px;
+    }
+
+}
+
+/* Tablet Portrait */
+
+@media(max-width: 950px) {
+    .brand-bar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 45% 20% 20%;
+      
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+   
+    #account {
+      
+        margin-left: 150px;
+        margin-top: 30px;
+        font-size: 10px;
+    }
+    #cart {
+    
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 170px;
+    }
+
+}
+
 /* Mobile */
 
 @media(max-width: 667px) {
@@ -356,100 +414,3 @@ section#menu a:hover {
     }
 }
 
-/* @media(max-width: 667px) {
-    #account {
-        display: none;
-    }
-    .brand-bar {
-        display: block;
-        grid-template-columns: 20%;
-        width: 100%;
-    }
-    .navbar {
-        margin-top: 130px;
-    }
-    #shopping-section {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        width: 100%;
-    }
-    #account-mobile {
-        display: block;
-        font-size: 30px;
-        margin-top: 27px;
-        margin-left: 60px;
-        cursor: pointer;
-        text-align: center;
-    }
-    #account-mobile a {
-        text-decoration: none;
-        color: black;
-    }
-    #account-mobile a:hover {
-        color: grey;
-    }
-    #cart {
-        font-size: 30px;
-        margin-top: 10px;
-        margin-right: 60px;
-        cursor: pointer;
-        text-align: center;
-    }
-    #cart a {
-        text-decoration: none;
-        color: black;
-    }
-    #cart a:hover {
-        color: grey;
-    }
-}
-
-/*  TABLET  */
-
-/* @media(max-width: 1000px) {
-    #account {
-        display: none;
-    }
-    .brand-bar {
-        display: block;
-        width: 100%;
-        padding-top: 20px;
-    }
-    .navbar {
-        margin-top: 130px;
-    }
-    #shopping-section {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        width: 100%;
-    }
-    #account-mobile {
-        display: block;
-        font-size: 30px;
-        margin-top: 27px;
-        margin-left: 100px;
-        cursor: pointer;
-        text-align: center;
-    }
-    #account-mobile a {
-        text-decoration: none;
-        color: black;
-    }
-    #account-mobile a:hover {
-        color: grey;
-    }
-    #cart {
-        font-size: 30px;
-        margin-top: 10px;
-        margin-right: 170px;
-        cursor: pointer;
-        text-align: center;
-    }
-    #cart a {
-        text-decoration: none;
-        color: black;
-    }
-    #cart a:hover {
-        color: grey;
-    }
-}  */
