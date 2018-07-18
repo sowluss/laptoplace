@@ -1,11 +1,11 @@
-// Variables
+// VARIABLES
 const items = document.querySelector('#stock-list'),
     shoppingCartContent = document.querySelector('#cart-content tbody'),
     clearCartBtn = document.querySelector('#clear-cart');
 
 
 
-// Event Listeners
+// EVENT LISTENERS
 
 loadEventListeners();
 
@@ -25,7 +25,7 @@ function loadEventListeners() {
 }
 
 
-// Functions
+// FUNCTIONS
 
 function buyItem(e) {
     e.preventDefault();
@@ -64,7 +64,7 @@ function addIntoCart(item) {
     row.innerHTML = `
                 <tr>
                     <td>
-                        <img src="${item.image}" width=200>
+                        <img src="${item.image}" width=100>
                     </td>
                     <td>${item.name}</td>
                     <td>${item.price}</td>
