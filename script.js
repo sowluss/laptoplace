@@ -175,4 +175,10 @@ function getFromLocalStorage() {
             `;
              shoppingCartContent.appendChild(row); 
     });
+
+    //  pops up an "added to cart message" when "Add to Cart" button is clicked
+    $(function(){
+        $('[data-toggle="popover"]').popover()
+      });
 }
+
