@@ -17,6 +17,11 @@
     text-align: center;
 }
 
+.main-menu li a:hover {
+    color: #B3B3B3;
+    transition: .3s;
+}
+
 
 /* Account */
 
@@ -32,7 +37,8 @@
 }
 
 #account a:hover {
-    color: grey;
+    color: #f26522;
+    transition: .3s;
 }
 
 #account-mobile {
@@ -73,7 +79,7 @@ td {
     padding: 12px 25px;
     text-align: left;
     font-size: 15px;
-    
+
 }
 
 th:first-child,
@@ -117,6 +123,7 @@ ul li a {
 
 ul li a:hover {
     color: #B3B3B3;
+    transition: .3s;
 }
 
 
@@ -139,7 +146,7 @@ ul li a:hover {
 
 .item-name {
     text-align: center;
-   font-weight: 200; 
+    font-weight: 200;
     margin-top: 25px;
 }
 
@@ -166,6 +173,12 @@ ul li a:hover {
     margin-top: 30px;
 }
 
+#menu a:hover {
+    color: grey;
+    cursor: pointer;
+    transition: .3s;
+}
+
 .form-group {
     margin-top: 10px;
 }
@@ -174,12 +187,28 @@ ul li a:hover {
     width: 350px;
 }
 
+.footer-titles {
+    text-align: center;
+    margin-top: 30px;
+}
+
 .social {
-    margin: 30px auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#menu {
+    text-align: center;
 }
 
 .fab {
-    margin-right: 15px;
+    margin-right: 10px;
+}
+
+.fab:hover {
+    color: grey;
+    cursor: pointer;
+    transition: .3s;
 }
 
 #about {
@@ -297,63 +326,32 @@ section#menu a:hover {
 
 /* ***************    MEDIA QUERIES    ******************* */
 
-/* -------1413px------- */
+/* -------1415px------- */
 
-@media(max-width: 1413px) {
-
-   
-.brand-bar {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 60% 20% 20%;
-}
-
-#logo {
-    margin-left: 20px;
-    text-align: left;
-}
-
-#account {
-    text-align: right;
-}
-
-#cart {
-    font-size: 30px;
-    margin-top: 20px;
-    margin-right: 0;
-   text-align: center;
-}
-
-}
+@media(max-width: 1415px) {
 
 
-/* -------- 1024px -------- */
-
-@media(max-width: 1024px) {
     .brand-bar {
         width: 100%;
         display: grid;
-        grid-template-columns: 50% 20% 20%;
-      
+        grid-template-columns: 60% 20% 20%;
     }
 
     #logo {
-        margin: 0 auto;
-    }
-   
-    #account {
-      
-        margin-left: 150px;
-        margin-top: 30px;
-        font-size: 10px;
-    }
-    #cart {
-    
-        font-size: 30px;
-        margin-top: 20px;
-        margin-left: 170px;
+        margin-left: 20px;
+        text-align: left;
     }
 
+    #account {
+        text-align: right;
+    }
+
+    #cart {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-right: 0;
+        text-align: center;
+    }
     .footer-titles {
         text-align: center;
         margin-top: 30px;
@@ -370,6 +368,35 @@ section#menu a:hover {
 }
 
 
+/* -------- 1024px -------- */
+
+@media(max-width: 1024px) {
+    .brand-bar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 20% 20%;
+
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+
+    #account {
+        margin-left: 150px;
+        margin-top: 30px;
+        font-size: 10px;
+    }
+
+    #cart {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 170px;
+    }
+
+}
+
+
 /* --------- 950px --------- */
 
 @media(max-width: 950px) {
@@ -377,21 +404,22 @@ section#menu a:hover {
         width: 100%;
         display: grid;
         grid-template-columns: 45% 20% 20%;
-      
+
     }
 
     #logo {
         margin: 0 auto;
     }
-   
+
     #account {
-      
+
         margin-left: 150px;
         margin-top: 30px;
         font-size: 10px;
     }
+
     #cart {
-    
+
         font-size: 30px;
         margin-top: 20px;
         margin-left: 170px;
@@ -408,6 +436,13 @@ section#menu a:hover {
     }
 }
 
+/* ------- 764px -------- */
+
+@media(max-width: 767px) {
+    #log-in {
+        margin-top: 50px;
+    }
+}
 
 /* ------- 667px -------- */
 
@@ -422,7 +457,7 @@ section#menu a:hover {
         margin: 20px auto 0 auto;
         text-align: center;
     }
-   
+
     #account {
         width: 50%;
         margin: 25px auto;
@@ -439,6 +474,7 @@ section#menu a:hover {
         width: auto;
         margin-top: 10px;
     }
+
     .col-md-4 {
         margin-bottom: 15px;
     }
@@ -459,6 +495,28 @@ section#menu a:hover {
         width: 100%;
     }
 
+    .submenu:hover #shopping-cart {
+        display: block;
+        position: relative;
+        right: 0;
+        top: 100%;
+        z-index: 1;
+        background-color: white;
+        padding: 20px;
+        min-height: 200px;
+        min-width: 100px;
+    }
+
+    th,
+    td {
+        padding: 12px 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .remove {
+        display: none;
+    }
 
 
     /*  Footer  */
@@ -471,25 +529,38 @@ section#menu a:hover {
         margin-top: 30px;
         text-align: center;
     }
+
     .social {
         margin: 30px auto;
         text-align: center;
     }
+
     .footer-titles {
         text-align: center;
     }
+
     .signup-btn {
         width: 100%;
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
     }
+
     .account-titles {
-       text-align: center;
-       color: grey;
+        text-align: center;
+        color: grey;
     }
+
     #log-in {
         margin-top: 20px;
     }
-}
 
+    #log-in {
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    #create-account {
+        text-align: left;
+    }
+}
