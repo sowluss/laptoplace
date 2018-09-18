@@ -13,7 +13,7 @@
 }
 
 #logo {
-    margin-left: 19rem;
+    margin-left: 20rem;
     text-align: center;
 }
 
@@ -118,6 +118,14 @@ ul li a {
 ul li a:hover {
     color: #B3B3B3;
 }
+
+
+/* SHOWCASE */
+
+.mobile-showcase {
+    display: none;
+}
+
 
 /*  SALES CARDS  */
 
@@ -286,11 +294,40 @@ section#menu a:hover {
     margin-top: 20px;
 }
 
-/* **************************************  */
 
-/* MEDIA QUERIES */
+/* ***************    MEDIA QUERIES    ******************* */
 
-/* Tablet Landscape */
+/* -------1413px------- */
+
+@media(max-width: 1413px) {
+
+   
+.brand-bar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+}
+
+#logo {
+    margin-left: 20px;
+    text-align: left;
+}
+
+#account {
+    text-align: right;
+}
+
+#cart {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: 0;
+   text-align: center;
+}
+
+}
+
+
+/* -------- 1024px -------- */
 
 @media(max-width: 1024px) {
     .brand-bar {
@@ -317,9 +354,23 @@ section#menu a:hover {
         margin-left: 170px;
     }
 
+    .footer-titles {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    #menu {
+        text-align: center;
+    }
+
 }
 
-/* Tablet Portrait */
+
+/* --------- 950px --------- */
 
 @media(max-width: 950px) {
     .brand-bar {
@@ -348,7 +399,17 @@ section#menu a:hover {
 
 }
 
-/* Mobile */
+/* ------- 873px -------- */
+
+@media(max-width: 873px) {
+    #logo {
+        margin-left: 30px;
+        text-align: left;
+    }
+}
+
+
+/* ------- 667px -------- */
 
 @media(max-width: 667px) {
     .brand-bar {
@@ -357,22 +418,22 @@ section#menu a:hover {
     }
 
     #logo {
+        width: 100%;
         margin: 20px auto 0 auto;
         text-align: center;
     }
    
     #account {
         width: 50%;
-        margin-left: 150px;
-        margin-top: 25px;
-        font-size: 10px;
+        margin: 25px auto;
+        text-align: center;
     }
+
     #cart {
         width: 50%;
-        font-size: 30px;
-        margin-top: 20px;
-        margin-left: 170px;
+        margin: 20px auto;
     }
+
     .navbar {
         background-color: #363636;
         width: auto;
@@ -381,6 +442,24 @@ section#menu a:hover {
     .col-md-4 {
         margin-bottom: 15px;
     }
+
+    .form-group {
+        margin-top: 60px;
+    }
+
+    .bd-example {
+        display: none;
+    }
+
+    .mobile-showcase {
+        display: block;
+    }
+
+    .mobile-showcase img {
+        width: 100%;
+    }
+
+
 
     /*  Footer  */
 
