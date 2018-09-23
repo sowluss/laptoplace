@@ -6,11 +6,13 @@
     box-sizing: border-box;
 }
 
+
 .brand-bar {
     width: 100%;
     display: grid;
     grid-template-columns: 80% 10% 10%;
 }
+
 
 #logo {
     margin-left: 20rem;
@@ -37,12 +39,8 @@
 }
 
 #account a:hover {
-    color: #f26522;
+    color: #737373;
     transition: .3s;
-}
-
-#account-mobile {
-    display: none;
 }
 
 /* Cart */
@@ -51,6 +49,12 @@
     font-size: 30px;
     margin-top: 20px;
     margin-right: 70px;
+}
+
+#cart:hover {
+    cursor: pointer;
+    color: #737373;
+    transition: .3s;
 }
 
 .submenu {
@@ -190,6 +194,7 @@ ul li a:hover {
 .footer-titles {
     text-align: center;
     margin-top: 30px;
+    margin-right: 10px;
 }
 
 .social {
@@ -199,6 +204,7 @@ ul li a:hover {
 
 #menu {
     text-align: center;
+    margin-right: 10px;
 }
 
 .fab {
@@ -292,6 +298,26 @@ section#menu a:hover {
     color: white;
 }
 
+/* Removed blue shadow when viewing in Chrome */
+
+input:focus,
+input.form-control:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+textarea:focus,
+textarea.form-control:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
 /* FAQ page */
 
 .faq-text {
@@ -352,6 +378,7 @@ section#menu a:hover {
         margin-right: 0;
         text-align: center;
     }
+
     .footer-titles {
         text-align: center;
         margin-top: 30px;
@@ -363,6 +390,14 @@ section#menu a:hover {
 
     #menu {
         text-align: center;
+    }
+
+}
+
+/* -------- 1199px -------- */
+@media(max-width: 1199px) {
+    .account-forms .col-sm-3 {
+        max-width: 100%;
     }
 
 }
@@ -436,12 +471,17 @@ section#menu a:hover {
     }
 }
 
-/* ------- 764px -------- */
+/* ------- 767px -------- */
 
 @media(max-width: 767px) {
     #log-in {
         margin-top: 50px;
     }
+
+    .account-forms .col-sm-9 {
+        max-width: 100%;
+    }
+
 }
 
 /* ------- 667px -------- */
@@ -450,6 +490,10 @@ section#menu a:hover {
     .brand-bar {
         width: 100%;
         display: inline-block;
+    }
+
+    .brand-bar img {
+        width: 70%;
     }
 
     #logo {
@@ -562,5 +606,18 @@ section#menu a:hover {
 
     #create-account {
         text-align: left;
+    }
+}
+
+/* 404px */
+
+@media(max-width: 404px) {
+    .form-area {
+        width: 100%;
+    }
+
+    .form-group {
+        margin-top: 30px;
+        padding-bottom: 20px;
     }
 }

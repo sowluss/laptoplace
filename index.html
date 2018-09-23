@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -17,37 +18,37 @@
   <!-- BRAND BAR -->
 
 
-
   <div class="brand-bar">
     <div id="logo">
       <a href="index.html"><img src="img/logo_2.png"></a>
     </div>
 
-    
+
     <div id="account">
-      <a href="account.html"><h5>Account</h5>
+      <a href="account.html">
+        <h5>Account</h5>
       </a>
     </div>
-    
+
     <div id="cart">
-     <ul>
+      <ul>
         <li class="submenu">
-        <i class="fas fa-cart-plus"></i>
-        <div id="shopping-cart">
+          <i class="fas fa-cart-plus"></i>
+          <div id="shopping-cart">
             <table id="cart-content" class="u-full-width">
-                <thead>
-                    <tr>
-                        <th>Image</th>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
             </table>
             <button type="button" class="btn btn-outline-dark" id="clear-cart">Clear Cart</button>
-    </div>
-      </li>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -92,13 +93,13 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-          <img class="d-block w-100" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]"
-            src="img/laptop1-car.jpeg" data-holder-rendered="true">
+          <img class="d-block w-100" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide"
+            alt="First slide [900x300]" src="img/laptop1-car.jpeg" data-holder-rendered="true">
 
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" data-src="holder.js/900x300?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide [900x300]"
-            src="img/laptop2-car.jpeg" data-holder-rendered="true">
+          <img class="d-block w-100" data-src="holder.js/900x300?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide"
+            alt="Second slide [900x300]" src="img/laptop2-car.jpeg" data-holder-rendered="true">
 
         </div>
       </div>
@@ -120,178 +121,197 @@
   <!-- FIRST ROW -->
 
   <div id="stock-list">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="item-name">iOTA Slim</h5>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="item-name">iOTA Slim</h5>
+            </div>
+            <img src="stock/laptop1.png" alt="Card image" class="stock-photo">
+            <div class="card-body">
+              <p class="card-text">14" FHD Metal Laptop (Silver) - (Intel Dual Core Celeron N3350 (Burst 2.4GHz)
+                Processor, 2 GB RAM, 32 GB eMMC
+                Storage, Windows 10).</p>
+              <span class="price">&euro;180</span>
+              <button type="button" class="btn btn-outline-secondary add-to-cart" data-container="body" data-toggle="popover"
+                title="iOTA Slim" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart."
+                data-id='1'>Add to cart</button>
+            </div>
           </div>
-          <img src="stock/laptop1.png" alt="Card image" class="stock-photo">
-          <div class="card-body">
-            <p class="card-text">14" FHD Metal Laptop (Silver) - (Intel Dual Core Celeron N3350 (Burst 2.4GHz) Processor, 2 GB RAM, 32 GB eMMC
-              Storage, Windows 10).</p>
-            <span class="price">&euro;180</span>
-            <button type="button" class="btn btn-outline-secondary add-to-cart" data-container="body" data-toggle="popover" title="iOTA Slim" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart." data-id='1'>Add to cart</button>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="item-name">Dell Inspiron 7000</h5>
+            </div>
+            <img src="stock/laptop2.png" alt="Card image" class="stock-photo">
+            <div class="card-body">
+              <p class="card-text">15.5-Inch Full HD IPS Gaming Laptop (Black) - (Intel Core i7-7700HQ, 16GB RAM, 128GB
+                SSD + 1TB HDD, NVIDIA Geforce
+                GTX 1050Ti 4GB, Windows 10).</p>
+              <span class="price">&euro;1090</span>
+              <button type="button" class="btn btn-outline-secondary add-to-cart" data-container="body" data-toggle="popover"
+                title="Dell Inspiron 7000" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart."
+                data-id='2'>Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="item-name">ASUS X Series</h5>
+            </div>
+            <img src="stock/laptop3.png" alt="Card image" class="stock-photo">
+            <div class="card-body">
+              <p class="card-text">15.6-Inch Laptop - (Black) (Intel Pentium N4200, 4 GB RAM, 1 TB HDD, Windows 10).
+                Ultra Slim 200nits//HD 1366x768
+                16: 9//Anti-Glare//NTSC: 45%.</p>
+              <span class="price">&euro;499</span>
+              <button type="button" class="btn btn-outline-secondary add-to-cart" data-container="body" data-toggle="popover"
+                title="ASUS X Series" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart."
+                data-id='3'>Add to cart</button>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="item-name">Dell Inspiron 7000</h5>
+    <!-- SECOND ROW -->
+
+    <div class="container">
+      <div class="row rows">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="item-name">Acer Swift 1</h5>
+            </div>
+            <img src="stock/laptop4.png" alt="Card image" class="stock-photo">
+            <div class="card-body">
+              <p class="card-text">Ultrabook 13.3-Inch Notebook - (Pure Silver) (Intel Pentium N4200, 4 GB RAM, 128 GB
+                SSD, Windows 10 Home).</p>
+              <span class="price">&euro;330</span>
+              <button type="button" class="btn btn-outline-secondary add-to-cart" data-container="body" data-toggle="popover"
+                title="Acer Swift 1" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart."
+                data-id='4'>Add to cart</button>
+            </div>
           </div>
-          <img src="stock/laptop2.png" alt="Card image" class="stock-photo">
-          <div class="card-body">
-            <p class="card-text">15.5-Inch Full HD IPS Gaming Laptop (Black) - (Intel Core i7-7700HQ, 16GB RAM, 128GB SSD + 1TB HDD, NVIDIA Geforce
-              GTX 1050Ti 4GB, Windows 10).</p>
-            <span class="price">&euro;1090</span>
-            <button type="button" class="btn btn-outline-secondary add-to-cart"
-            data-container="body" data-toggle="popover" title="Dell Inspiron 7000" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart." data-id='2'>Add to cart</button>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="item-name">ASUS S510UQ</h5>
+            </div>
+            <img src="stock/laptop5.png" alt="Card image" class="stock-photo">
+            <div class="card-body">
+              <p class="card-text">15.6-Inch Nano Edge Screen VivoBook (Gold) - (Intel Core i7-7500U, 8GB RAM, 256GB
+                SSD, Windows 10).</p>
+              <span class="price">&euro;725</span>
+              <button type="button" class="btn btn-outline-secondary add-to-cart" data-container="body" data-toggle="popover"
+                title="ASUS S510UQ" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart."
+                data-id='5'>Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="item-name">HP 15-BS104NA</h5>
+            </div>
+            <img src="stock/laptop6.png" alt="Card image" class="stock-photo">
+            <div class="card-body">
+              <p class="card-text">15.6-inch Laptop (Natural Silver) - (Intel i5-8250U, 8 GB RAM, 1 TB HDD, Intel UHD
+                Graphics 620, Windows 10 Home).</p>
+              <span class="price">&euro;550</span>
+              <button type="button" class="btn btn-outline-secondary add-to-cart" data-container="body" data-toggle="popover"
+                title="HP 15-BS104NA" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart."
+                data-id='6'>Add to cart</button>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="item-name">ASUS X Series</h5>
+    <!-- THIRD ROW -->
+
+    <div class="container">
+      <div class="row rows">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="item-name">Microsoft Surface Laptop</h5>
+            </div>
+            <img src="stock/laptop7.png" alt="Card image" class="stock-photo">
+            <div class="card-body">
+              <p class="card-text">Microsoft DAG-00063 13.5-inch Touchscreen Surface Laptop (Intel Core i5-7200U, 8GB
+                RAM, 256GB SSD, Intel HD 620
+                Graphics, Windows 10 S).</p>
+              <span class="price">&euro;1,099</span>
+              <button type="button" class="btn btn-outline-secondary add-to-cart" data-container="body" data-toggle="popover"
+                title="Microsoft Surface Laptop" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart."
+                data-id='7'>Add to cart</button>
+            </div>
           </div>
-          <img src="stock/laptop3.png" alt="Card image" class="stock-photo">
-          <div class="card-body">
-            <p class="card-text">15.6-Inch Laptop - (Black) (Intel Pentium N4200, 4 GB RAM, 1 TB HDD, Windows 10). Ultra Slim 200nits//HD 1366x768
-              16: 9//Anti-Glare//NTSC: 45%.</p>
-            <span class="price">&euro;499</span>
-            <button type="button" class="btn btn-outline-secondary add-to-cart"
-            data-container="body" data-toggle="popover" title="ASUS X Series" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart." data-id='3'>Add to cart</button>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="item-name">Lenovo V330</h5>
+            </div>
+            <img src="stock/laptop8.png" alt="Card image" class="stock-photo">
+            <div class="card-body">
+              <p class="card-text">15.6-inch Laptop Intel Core i5-8250U 1.6GHz / 3.4GHz Turbo Quad Core Processor, 8GB
+                RAM, 256GB SSD, (1920 x 1080
+                Resolution), Windows 10.</p>
+              <span class="price">&euro;540</span>
+              <button type="button" class="btn btn-outline-secondary add-to-cart" data-container="body" data-toggle="popover"
+                title="Lenovo V330" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart."
+                data-id='8'>Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="item-name">Dell Inspiron 7000</h5>
+            </div>
+            <img src="stock/laptop9.png" alt="Card image" class="stock-photo">
+            <div class="card-body">
+              <p class="card-text">13.3-inch Full HD Premium Laptop (Silver) - (Intel Core i5-8250U Processor, 8 GB
+                RAM, 256 GB SSD, Windows 10
+                Home).</p>
+              <span class="price">&euro;680</span>
+              <button type="button" class="btn btn-outline-secondary add-to-cart" data-container="body" data-toggle="popover"
+                title="Dell Inspiron 7000" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart."
+                data-id='9'>Add to cart</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- SECOND ROW -->
-
-  <div class="container">
-    <div class="row rows">
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="item-name">Acer Swift 1</h5>
-          </div>
-          <img src="stock/laptop4.png" alt="Card image" class="stock-photo">
-          <div class="card-body">
-            <p class="card-text">Ultrabook 13.3-Inch Notebook - (Pure Silver) (Intel Pentium N4200, 4 GB RAM, 128 GB SSD, Windows 10 Home).</p>
-            <span class="price">&euro;330</span>
-            <button type="button" class="btn btn-outline-secondary add-to-cart"
-            data-container="body" data-toggle="popover" title="Acer Swift 1" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart." data-id='4'>Add to cart</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="item-name">ASUS S510UQ</h5>
-          </div>
-          <img src="stock/laptop5.png" alt="Card image" class="stock-photo">
-          <div class="card-body">
-            <p class="card-text">15.6-Inch Nano Edge Screen VivoBook (Gold) - (Intel Core i7-7500U, 8GB RAM, 256GB SSD, Windows 10).</p>
-            <span class="price">&euro;725</span>
-            <button type="button" class="btn btn-outline-secondary add-to-cart" 
-            data-container="body" data-toggle="popover" title="ASUS S510UQ" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart."
-            data-id='5'>Add to cart</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="item-name">HP 15-BS104NA</h5>
-          </div>
-          <img src="stock/laptop6.png" alt="Card image" class="stock-photo">
-          <div class="card-body">
-            <p class="card-text">15.6-inch Laptop (Natural Silver) - (Intel i5-8250U, 8 GB RAM, 1 TB HDD, Intel UHD Graphics 620, Windows 10 Home).</p>
-            <span class="price">&euro;550</span>
-            <button type="button" class="btn btn-outline-secondary add-to-cart"
-            data-container="body" data-toggle="popover" title="HP 15-BS104NA" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart." 
-            data-id='6'>Add to cart</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- THIRD ROW -->
-
-  <div class="container">
-    <div class="row rows">
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="item-name">Microsoft Surface Laptop</h5>
-          </div>
-          <img src="stock/laptop7.png" alt="Card image" class="stock-photo">
-          <div class="card-body">
-            <p class="card-text">Microsoft DAG-00063 13.5-inch Touchscreen Surface Laptop (Intel Core i5-7200U, 8GB RAM, 256GB SSD, Intel HD 620
-              Graphics, Windows 10 S).</p>
-            <span class="price">&euro;1,099</span>
-            <button type="button" class="btn btn-outline-secondary add-to-cart"
-            data-container="body" data-toggle="popover" title="Microsoft Surface Laptop" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart." 
-            data-id='7'>Add to cart</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="item-name">Lenovo V330</h5>
-          </div>
-          <img src="stock/laptop8.png" alt="Card image" class="stock-photo">
-          <div class="card-body">
-            <p class="card-text">15.6-inch Laptop Intel Core i5-8250U 1.6GHz / 3.4GHz Turbo Quad Core Processor, 8GB RAM, 256GB SSD, (1920 x 1080
-              Resolution), Windows 10.</p>
-            <span class="price">&euro;540</span>
-            <button type="button" class="btn btn-outline-secondary add-to-cart"
-            data-container="body" data-toggle="popover" title="Lenovo V330" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart." data-id='8'>Add to cart</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="item-name">Dell Inspiron 7000</h5>
-          </div>
-          <img src="stock/laptop9.png" alt="Card image" class="stock-photo">
-          <div class="card-body">
-            <p class="card-text">13.3-inch Full HD Premium Laptop (Silver) - (Intel Core i5-8250U Processor, 8 GB RAM, 256 GB SSD, Windows 10
-              Home).</p>
-            <span class="price">&euro;680</span>
-            <button type="button" class="btn btn-outline-secondary add-to-cart"
-            data-container="body" data-toggle="popover" title="Dell Inspiron 7000" data-trigger="focus" data-placement="bottom" data-content="Added to your shopping cart."
-            data-id='9'>Add to cart</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
   <!-- FOOTER AREA -->
 
   <div class="container">
     <div class="row">
       <div class="col-md-6 about">
-    <h5 class="footer-titles">Menu</h5>
-   <section id="menu">
-    <a href="about.html" target="_blank"><p>About Us</p></a>
-    <a href="contact.html" target="_blank"><p>Contact</p></a>
-    <a href="faq.html" target="_blank"<p>F&Q</p></a>
-  </section>
+        <h5 class="footer-titles">Menu</h5>
+        <section id="menu">
+          <a href="about.html">
+            <p>About Us</p>
+          </a>
+          <a href="contact.html">
+            <p>Contact</p>
+          </a>
+          <a href="faq.html" <p>F&Q</p></a>
+        </section>
       </div>
       <div class="col-md-6">
         <h5 class="footer-titles">Join Us</h5>
@@ -307,7 +327,7 @@
 
   <hr>
 
-  <p id="footer-copy">Copyright:  &copy 2018 LAPTOPLACE</p>
+  <p id="footer-copy">Copyright: &copy 2018 LAPTOPLACE</p>
 
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
